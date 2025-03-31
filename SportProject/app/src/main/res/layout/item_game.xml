@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp">
+    <!-- Root LinearLayout container with vertical orientation and padding -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="12dp">
+        <!-- CardView to hold the game details with elevation, margin, and corner radius -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- LinearLayout inside the CardView with vertical orientation and padding -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="8dp">
+                <!-- Horizontal LinearLayout for the sport type with center vertical gravity -->
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_sport" />
+                <!-- ImageView for sport icon -->
+
+                <TextView
+                    android:id="@+id/tvGameSport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sport"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"
+                    android:textColor="@color/colorPrimaryDark" />
+                <!-- TextView for displaying the sport type -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="8dp">
+                <!-- Horizontal LinearLayout for the date and time with center vertical gravity -->
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_calendar" />
+                <!-- ImageView for calendar icon -->
+
+                <TextView
+                    android:id="@+id/tvGameDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date and Time"
+                    android:paddingStart="8dp" />
+                <!-- TextView for displaying the date and time of the game -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="8dp">
+                <!-- Horizontal LinearLayout for the location with center vertical gravity -->
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_location" />
+                <!-- ImageView for location icon -->
+
+                <TextView
+                    android:id="@+id/tvGameLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:paddingStart="8dp" />
+                <!-- TextView for displaying the location of the game -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="8dp">
+                <!-- Horizontal LinearLayout for the players needed with center vertical gravity -->
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_players" />
+                <!-- ImageView for players icon -->
+
+                <TextView
+                    android:id="@+id/tvGamePlayers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Players Needed"
+                    android:paddingStart="8dp" />
+                <!-- TextView for displaying the number of players needed -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="8dp">
+                <!-- Horizontal LinearLayout for the price with center vertical gravity -->
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_price" />
+                <!-- ImageView for price icon -->
+
+                <TextView
+                    android:id="@+id/tvGamePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:paddingStart="8dp" />
+                <!-- TextView for displaying the price per player -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="8dp">
+                <!-- Horizontal LinearLayout for the additional info with center vertical gravity -->
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_info" />
+                <!-- ImageView for info icon -->
+
+                <TextView
+                    android:id="@+id/tvGameAdditionalInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Additional Info"
+                    android:paddingStart="8dp" />
+                <!-- TextView for displaying additional information about the game -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="8dp">
+                <!-- Horizontal LinearLayout for the creator's username with center vertical gravity -->
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_creator" />
+                <!-- ImageView for creator icon -->
+
+                <TextView
+                    android:id="@+id/tvCreatorUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Created by"
+                    android:paddingStart="8dp" />
+                <!-- TextView for displaying the creator's username -->
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnJoinGame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Join Game"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+            <!-- Button for joining the game -->
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

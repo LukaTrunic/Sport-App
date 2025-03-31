@@ -1,0 +1,16 @@
+<!-- res/drawable/ic_launcher_foreground.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Background circle -->
+    <path
+        android:fillColor="@color/colorPrimaryDark"
+        android:pathData="M54,0C83.91,0 108,24.09 108,54S83.91,108 54,108 0,83.91 0,54 24.09,0 54,0Z"/>
+
+    <!-- Sport icon, e.g., a football (soccer) ball -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M54,28a26,26 0,1 1-26,26,26,26 0,0 1,26-26m0-4a30,30 0,1 0,30,30A30,30 0,0 0,54,24ZM35,65L50,55,35,45,33,56ZM54,38A16,16 0,1 1,38,54,16,16 0,0 1,54,38ZM62,65L77,55,62,45,60,56Z"/>
+</vector>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Root element for defining a menu in Android -->
+
+    <item
+        android:id="@+id/action_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="ifRoom|withText" />
+    <!-- Menu item for accessing the user's profile
+         - android:id: Unique identifier
+         - android:title: Text to be displayed
+         - android:icon: Icon to be displayed
+         - app:showAsAction: Determines how the item should be displayed -->
+
+    <item
+        android:id="@+id/action_sports_news"
+        android:title="Sports News"
+        android:icon="@drawable/ic_news"
+        app:showAsAction="ifRoom|withText" />
+    <!-- Menu item for accessing sports news
+         - android:id: Unique identifier
+         - android:title: Text to be displayed
+         - android:icon: Icon to be displayed
+         - app:showAsAction: Determines how the item should be displayed -->
+</menu>

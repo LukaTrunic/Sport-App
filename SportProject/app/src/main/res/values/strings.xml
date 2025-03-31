@@ -1,0 +1,65 @@
+<resources>
+    <!-- Name of the app -->
+    <string name="app_name">Sportiko</string>
+
+    <!-- Name for profile image -->
+    <string name="profile_image">Profile Image</string>
+
+    <!-- Array of all the sports on the app -->
+    <string-array name="sports_array">
+        <item>Basketball</item>
+        <item>Football</item>
+        <item>Volleyball</item>
+        <item>Padel</item>
+    </string-array>
+
+    <!-- Array of all the autocorrect locations -->
+    <string-array name="location_suggestions">
+        <item>Belgrade</item>
+        <item>Novi Sad</item>
+        <item>Niš</item>
+        <item>Kragujevac</item>
+        <item>Subotica</item>
+        <item>Zrenjanin</item>
+        <item>Pančevo</item>
+        <item>Čačak</item>
+        <item>Kraljevo</item>
+        <item>Smederevo</item>
+        <item>Leskovac</item>
+        <item>Valjevo</item>
+        <item>Kruševac</item>
+        <item>Vranje</item>
+        <item>Šabac</item>
+        <item>Užice</item>
+        <item>Novi Pazar</item>
+        <item>Zaječar</item>
+        <item>Sombor</item>
+        <item>Požarevac</item>
+    </string-array>
+
+
+    <!-- Array for the filter -->
+    <string-array name="sports_filter_array">
+        <item>All Sports</item>
+        <item>Basketball</item>
+        <item>Football</item>
+        <item>Volleyball</item>
+        <item>Padel</item>
+    </string-array>
+
+    <!-- Array for the level of sport -->
+    <string-array name="level_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <!-- Array for the gender -->
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Rather not say</item>
+    </string-array>
+</resources>
