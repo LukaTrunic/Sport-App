@@ -63,7 +63,7 @@ public class SportsNewsActivity extends AppCompatActivity {
 
         // Create an instance of NewsApiService using Retrofit
         NewsApiService newsApiService = RetrofitClient.getRetrofitInstance().create(NewsApiService.class);
-        Call<NewsResponse> call = newsApiService.getTopHeadlines("sports", "4f10264aea6543f5b352cad67452c6d0", "en");
+        Call<NewsResponse> call = newsApiService.getTopHeadlines("sports", "Your_Api_Key", "en");
 
         // Enqueue the call to make the network request
         call.enqueue(new Callback<NewsResponse>() {
