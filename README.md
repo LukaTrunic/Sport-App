@@ -56,4 +56,4 @@ Sport Project is an Android mobile application designed to help users organize a
 ## Author
 
 - Luka Trunić
-- Email: [your.email@example.com]
+- Email: [lukatrunic@gmail.com]
