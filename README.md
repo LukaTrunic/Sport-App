@@ -27,7 +27,7 @@
 
 1. Open the project in **Android Studio**.
 2. Ensure required dependencies are installed (`Retrofit`, `Glide`, etc.).
-3. Run the app on an emulator or physical device (API level 33+ recommended).
+3. Run the app on an emulator or physical device (API level 34+ recommended).
 
 
 ## 🚀 External APIs
