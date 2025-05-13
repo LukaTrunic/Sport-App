@@ -35,12 +35,6 @@
 - **News API** – Sports news integration using Retrofit and image loading with Glide
 
 
-## 🔐 Permissions Required
-
-- Internet access
-- (Optionally) Location if game filtering by distance is added
-
-
 ## 📬 Author
 
 Luka Trunić
