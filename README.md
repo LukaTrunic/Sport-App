@@ -1,59 +1,75 @@
-# Sport Project App
+# 🏀 SportProject – Android App for Sports Game Organization
 
-Sport Project is an Android mobile application designed to help users organize and join sports matches in their local area. Inspired by the concept behind "Fali nam igrač," the app enables users to post and browse game advertisements based on criteria such as time, location, sport type, price, and the number of players needed.
+**SportProject** is an Android application developed to help users organize and join sports matches. Users can browse upcoming games, create new ones, register/login, view details, and keep track of sports news — all within a single mobile interface.
 
-## Features
+---
 
-- Create and publish games with details such as sport, location, date, time, price, and required number of players
-- Browse a list of available games and request to join
-- View real-time sports news via integration with an external API
-- Automatically filter out expired games to maintain relevancy
+## 📱 Key Features
 
-## Technologies Used
+- 👥 **User Registration/Login** – Create and manage user accounts
+- 📅 **Game Creation** – Add new sports games with location, time, price, and required players
+- 🗂 **Game Listings** – Browse a list of available games with filtering
+- 📄 **Game Details View** – See all info related to a particular game
+- 📰 **Sports News Integration** – Fetch sports news from an external API
+- 🌐 **Profile Page** – View personal profile and posted games
 
-- **Platform:** Android
-- **Language:** Java/Kotlin
-- **IDE:** Android Studio
-- **Libraries:**
-  - Retrofit (HTTP networking)
-  - Glide (image loading)
-  - SQLite / Room (local storage)
+---
 
-## Getting Started
+## 🛠 Technology Stack
 
-### Prerequisites
+- **Language**: Java
+- **Platform**: Android Studio
+- **Database**: SQLite (local storage)
+- **Networking**: Retrofit for API calls
+- **Image Loading**: Glide
+- **Architecture**: Activity-based, using adapters and intent-driven navigation
 
-- Android Studio (Flamingo or newer)
-- Android SDK version 34 or above
-- A connected Android device or configured emulator
-- Internet connection for news API access
+---
 
-### Installation
+## 📁 Project Structure
 
-1. **Clone the repository**
+```
+SportProject/
+├── app/
+│   └── src/
+│       ├── main/
+│       │   ├── java/rs/ac/singidunum/activities/
+│       │   ├── java/rs/ac/singidunum/adapters/
+│       │   ├── java/rs/ac/singidunum/api/
+│       │   ├── java/rs/ac/singidunum/db/
+│       │   ├── java/rs/ac/singidunum/models/
+│       │   └── res/ (layouts, values, drawables)
+│       └── AndroidManifest.xml
+```
 
-   ```bash
-   git clone https://github.com/yourusername/sport-project-app.git
-   cd sport-project-app
+---
 
-2. **Open the project in Android Studio**
+## ▶️ How to Run
 
-   - Launch Android Studio
-   - Select **"Open an existing project"**
-   - Navigate to the `SportProject` directory you just cloned
-   - Wait for Gradle to finish syncing and downloading dependencies
+1. Open the project in **Android Studio**.
+2. Ensure required dependencies are installed (`Retrofit`, `Glide`, etc.).
+3. Run the app on an emulator or physical device (API level 33+ recommended).
 
-3. **Build the project**
+---
 
-   - If prompted, install any missing SDK components or tools
-   - Let Gradle complete its build process
+## 🚀 External APIs
 
-4. **Run the application**
+- **News API** – Sports news integration using Retrofit and image loading with Glide
 
-   - Connect your Android device via USB (enable developer mode), or start an emulator
-   - Press the **Run** button or use `Shift + F10` to install and launch the app
+---
 
-## Author
+## 🔐 Permissions Required
 
-- Luka Trunić
-- Email: [lukatrunic@gmail.com]
+- Internet access
+- (Optionally) Location if game filtering by distance is added
+
+---
+
+## 📬 Author
+
+**Luka Trunić**  
+Student ID: 2021230020  
+Faculty of Technical Sciences, Novi Sad  
+Course: Android Development
+
+---
