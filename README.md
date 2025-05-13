@@ -24,7 +24,7 @@ Sport Project is an Android mobile application designed to help users organize a
 ### Prerequisites
 
 - Android Studio (Flamingo or newer)
-- Android SDK version 33 or above
+- Android SDK version 34 or above
 - A connected Android device or configured emulator
 - Internet connection for news API access
 
