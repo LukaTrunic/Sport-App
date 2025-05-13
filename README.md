@@ -2,7 +2,6 @@
 
 **SportProject** is an Android application developed to help users organize and join sports matches. Users can browse upcoming games, create new ones, register/login, view details, and keep track of sports news — all within a single mobile interface.
 
----
 
 ## 📱 Key Features
 
@@ -13,7 +12,6 @@
 - 📰 **Sports News Integration** – Fetch sports news from an external API
 - 🌐 **Profile Page** – View personal profile and posted games
 
----
 
 ## 🛠 Technology Stack
 
@@ -24,25 +22,6 @@
 - **Image Loading**: Glide
 - **Architecture**: Activity-based, using adapters and intent-driven navigation
 
----
-
-## 📁 Project Structure
-
-```
-SportProject/
-├── app/
-│   └── src/
-│       ├── main/
-│       │   ├── java/rs/ac/singidunum/activities/
-│       │   ├── java/rs/ac/singidunum/adapters/
-│       │   ├── java/rs/ac/singidunum/api/
-│       │   ├── java/rs/ac/singidunum/db/
-│       │   ├── java/rs/ac/singidunum/models/
-│       │   └── res/ (layouts, values, drawables)
-│       └── AndroidManifest.xml
-```
-
----
 
 ## ▶️ How to Run
 
@@ -50,26 +29,18 @@ SportProject/
 2. Ensure required dependencies are installed (`Retrofit`, `Glide`, etc.).
 3. Run the app on an emulator or physical device (API level 33+ recommended).
 
----
 
 ## 🚀 External APIs
 
 - **News API** – Sports news integration using Retrofit and image loading with Glide
 
----
 
 ## 🔐 Permissions Required
 
 - Internet access
 - (Optionally) Location if game filtering by distance is added
 
----
 
 ## 📬 Author
 
-**Luka Trunić**  
-Student ID: 2021230020  
-Faculty of Technical Sciences, Novi Sad  
-Course: Android Development
-
----
+Luka Trunić
