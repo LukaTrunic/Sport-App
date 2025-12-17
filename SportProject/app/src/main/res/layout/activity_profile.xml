@@ -24,14 +24,15 @@
 
         <!-- Profile ImageView -->
         <ImageView
-            android:id="@+id/profileImage"
+            android:id="@+id/ivProfileImage"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
             android:src="@drawable/ic_profile_placeholder"
-            android:contentDescription="@string/profile_image" />
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_bg"
+            android:clipToOutline="true"
+            android:outlineProvider="background"/>
 
         <!-- Username TextView -->
         <TextView
@@ -148,5 +149,15 @@
             android:backgroundTint="@color/colorPrimaryDark"
             android:textColor="@android:color/white"
             android:layout_marginTop="32dp" />
+
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Edit Profile"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
     </LinearLayout>
 </ScrollView>

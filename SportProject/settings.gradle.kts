@@ -1,14 +1,12 @@
 pluginManagement {
     repositories {
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
-        mavenCentral()
         gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+    plugins {
+        id("com.android.application") version "8.0.2" apply false
+        id("com.google.gms.google-services") version "4.3.15"
     }
 }
 dependencyResolutionManagement {
@@ -18,7 +16,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-
 rootProject.name = "SportProject"
 include(":app")
- 

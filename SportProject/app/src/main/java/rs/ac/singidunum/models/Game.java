@@ -2,10 +2,11 @@ package rs.ac.singidunum.models;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Game implements Serializable {
-
+    private String id;
     private String title;
     private String description;
     private String sport;
@@ -13,73 +14,105 @@ public class Game implements Serializable {
     private String endTime;
     private String date;
     private String location;
-    private int playersNeeded;
-    private int maxPlayers;
+    private int    playersNeeded;
+    private int    maxPlayers;
     private double price;
     private String ageRange;
     private String additionalInfo;
     private String creatorUsername;
+    private String creatorUid;
     private List<String> joinedUsers;
+    private Date startTimestamp;
+    private Date endTimestamp;
+// AND generate public getters/setters for both
 
-    // Constructor with all fields
-    public Game(String title, String description, String sport, String startTime, String endTime, String date,
-                String location, int playersNeeded, int maxPlayers, double price, String ageRange, String additionalInfo, String creatorUsername) {
-        this.title = title;
-        this.description = description;
-        this.sport = sport;
-        this.startTime = startTime;
-        this.endTime = endTime;
-        this.date = date;
-        this.location = location;
-        this.playersNeeded = playersNeeded;
-        this.maxPlayers = maxPlayers;
-        this.price = price;
-        this.ageRange = ageRange;
-        this.additionalInfo = additionalInfo;
-        this.creatorUsername = creatorUsername;
-        this.joinedUsers = new ArrayList<>(); // Initialize the list
+
+    /** Firestore needs this no-arg constructor */
+    public Game() {
+        this.joinedUsers = new ArrayList<>();
     }
 
-    // Getters and Setters for all fields
-    public String getTitle() { return title; }
-    public void setTitle(String title) { this.title = title; }
+    /**
+     * Full constructor
+     */
+    public Game(String title,
+                String description,
+                String sport,
+                String startTime,
+                String endTime,
+                String date,
+                String location,
+                int    playersNeeded,
+                int    maxPlayers,
+                double price,
+                String ageRange,
+                String additionalInfo,
+                String creatorUsername,
+                String creatorUid) {
+        this.title           = title;
+        this.description     = description;
+        this.sport           = sport;
+        this.startTime       = startTime;
+        this.endTime         = endTime;
+        this.date            = date;
+        this.location        = location;
+        this.playersNeeded   = playersNeeded;
+        this.maxPlayers      = maxPlayers;
+        this.price           = price;
+        this.ageRange        = ageRange;
+        this.additionalInfo  = additionalInfo;
+        this.creatorUsername = creatorUsername;
+        this.creatorUid      = creatorUid;
+        this.joinedUsers     = new ArrayList<>();
+    }
 
-    public String getDescription() { return description; }
-    public void setDescription(String description) { this.description = description; }
+    // --- Getters & Setters ---
 
-    public String getSport() { return sport; }
-    public void setSport(String sport) { this.sport = sport; }
+    public String getId()               { return id; }
+    public void   setId(String id)      { this.id = id; }
 
-    public String getStartTime() { return startTime; }
-    public void setStartTime(String startTime) { this.startTime = startTime; }
+    public String getTitle()            { return title; }
+    public void   setTitle(String t)    { this.title = t; }
 
-    public String getEndTime() { return endTime; }
-    public void setEndTime(String endTime) { this.endTime = endTime; }
+    public String getDescription()      { return description; }
+    public void   setDescription(String d) { this.description = d; }
 
-    public String getDate() { return date; }
-    public void setDate(String date) { this.date = date; }
+    public String getSport()            { return sport; }
+    public void   setSport(String s)    { this.sport = s; }
 
-    public String getLocation() { return location; }
-    public void setLocation(String location) { this.location = location; }
+    public String getStartTime()        { return startTime; }
+    public void   setStartTime(String s) { this.startTime = s; }
 
-    public int getPlayersNeeded() { return playersNeeded; }
-    public void setPlayersNeeded(int playersNeeded) { this.playersNeeded = playersNeeded; }
+    public String getEndTime()          { return endTime; }
+    public void   setEndTime(String e)   { this.endTime = e; }
 
-    public int getMaxPlayers() { return maxPlayers; }
-    public void setMaxPlayers(int maxPlayers) { this.maxPlayers = maxPlayers; }
+    public String getDate()             { return date; }
+    public void   setDate(String d)      { this.date = d; }
 
-    public double getPrice() { return price; }
-    public void setPrice(double price) { this.price = price; }
+    public String getLocation()         { return location; }
+    public void   setLocation(String l)  { this.location = l; }
 
-    public String getAgeRange() { return ageRange; }
-    public void setAgeRange(String ageRange) { this.ageRange = ageRange; }
+    public int    getPlayersNeeded()    { return playersNeeded; }
+    public void   setPlayersNeeded(int p) { this.playersNeeded = p; }
 
-    public String getAdditionalInfo() { return additionalInfo; }
-    public void setAdditionalInfo(String additionalInfo) { this.additionalInfo = additionalInfo; }
+    public int    getMaxPlayers()       { return maxPlayers; }
+    public void   setMaxPlayers(int m)  { this.maxPlayers = m; }
 
-    public String getCreatorUsername() { return creatorUsername; }
-    public void setCreatorUsername(String creatorUsername) { this.creatorUsername = creatorUsername; }
+    public double getPrice()            { return price; }
+    public void   setPrice(double p)    { this.price = p; }
 
-    public List<String> getJoinedUsers() { return joinedUsers; }
-    public void setJoinedUsers(List<String> joinedUsers) { this.joinedUsers = joinedUsers; }
+    public String getAgeRange()         { return ageRange; }
+    public void   setAgeRange(String a) { this.ageRange = a; }
+
+    public String getAdditionalInfo()   { return additionalInfo; }
+    public void   setAdditionalInfo(String a) { this.additionalInfo = a; }
+
+    public String getCreatorUsername()  { return creatorUsername; }
+    public void   setCreatorUsername(String c) { this.creatorUsername = c; }
+
+    public String getCreatorUid()       { return creatorUid; }
+    public void   setCreatorUid(String u) { this.creatorUid = u; }
+
+    public List<String> getJoinedUsers()      { return joinedUsers; }
+    public void        setJoinedUsers(List<String> list) { this.joinedUsers = list; }
 }

@@ -26,6 +26,17 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/edit_text_background"/>
+
                 <!-- Username input field -->
                 <EditText
                     android:id="@+id/etUsername"
@@ -51,18 +62,19 @@
                     android:background="@drawable/edit_text_background"/>
 
                 <!-- Age input field -->
+
+                <!-- Gender label -->
                 <EditText
                     android:id="@+id/etAge"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/edit_text_background"
                     android:hint="Age"
                     android:inputType="number"
-                    android:padding="12dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/edit_text_background"/>
+                    android:padding="12dp" />
 
-                <!-- Gender label -->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

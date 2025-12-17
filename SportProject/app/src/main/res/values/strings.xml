@@ -62,4 +62,8 @@
         <item>Female</item>
         <item>Rather not say</item>
     </string-array>
+
+    <string name="send">Send</string>
+
+    <string name="hint_type_message">Type a message…</string>
 </resources>

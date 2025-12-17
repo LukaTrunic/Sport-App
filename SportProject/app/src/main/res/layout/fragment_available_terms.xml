@@ -14,17 +14,11 @@
         android:layout_marginBottom="8dp"
         android:entries="@array/sports_filter_array" />
 
-    <!-- SwipeRefreshLayout to enable swipe-to-refresh functionality -->
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/swipeRefreshLayoutAvailable"
+    <!-- RecyclerView to display a list of available games -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAvailable"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <!-- RecyclerView to display a list of available games -->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewAvailable"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scrollbars="vertical" />
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
 </LinearLayout>
