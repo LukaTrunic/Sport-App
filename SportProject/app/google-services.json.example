@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "459975255803",
-    "project_id": "sport-project-40a7b",
-    "storage_bucket": "sport-project-40a7b.firebasestorage.app"
+    "project_number": "YOUR_PROJECT_NUMBER",
+    "project_id": "YOUR_FIREBASE_PROJECT_ID",
+    "storage_bucket": "YOUR_PROJECT_ID.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:459975255803:android:e61276f1e36a665062f25e",
+        "mobilesdk_app_id": "YOUR_MOBILE_SDK_APP_ID",
         "android_client_info": {
-          "package_name": "rs.ac.singidunum"
+          "package_name": "your.package.name"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyANXNwaXtR0D9wOuT4sPzGKO27y6Q6YSaY"
+          "current_key": "YOUR_API_KEY"
         }
       ],
       "services": {
