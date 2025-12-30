@@ -1,6 +1,4 @@
 # Sportiko – Sports Matchmaking and Community App
-#### Video Demo: https://youtu.be/kMy1hEI2DFU
-#### Description:
 
 Sportiko is an Android application designed to make organizing casual sports games easier. Many people want to play football, basketball, tennis, or padel, but finding enough players or coordinating time and place is often difficult. Sportiko solves this by allowing users to create games, browse available games, join games created by others, and stay updated with the latest sports news. The application is built in Java using Android Studio, and it uses SQLite for storing data locally.
 
@@ -78,3 +76,4 @@ Below is a brief overview of the most important files that I wrote for this proj
   Model classes that define the structure of user, game and news data used throughout the app.
 
 Together, these files implement the full flow of the application: authentication, game creation and discovery, profile management, SQLite persistence, and sports news retrieval.
+
